@@ -15,7 +15,7 @@ export default function Home() {
       <Loader/>
       <Hero/>
       <About/>
-      {/* <LineUp/> */}
+      <LineUp/>
       {/* <Tickets/> */}
       <Sponsors/>
       <Footer/>
