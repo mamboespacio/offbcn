@@ -5,6 +5,7 @@ import { tickets } from "@/data/tickets";
 import Marquee from "./Marquee";
 
 export const Tickets = () => {
+  if (!tickets) return <p>loading</p>;
   return (
     <section className="bg-grey">
       <Marquee direction="left" left={true} type="scroll" src="Day Passes - Get your ticket"/>

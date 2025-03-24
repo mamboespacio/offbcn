@@ -1,7 +1,7 @@
 'use client'
 import { motion, useScroll, useMotionValueEvent, useTransform } from "motion/react"
 import { useRef, useState } from "react";
-import { artists, artists2, artists4, liveArtists } from "@/data/artists";
+import { artists } from "@/data/artists";
 import Artist from "@/components/Artist";
 import Modal from "@/components/Modal";
 import Marquee from "@/components/Marquee";
@@ -17,7 +17,7 @@ export default function LineUp() {
   //   console.log(value);
   // });
   const y = useTransform(scrollYProgress, [0, 0.5, 1], ["0px", "200px", "0px"])
-
+  if (!artists) return <p>loading</p>;
   return (
     <>
       <section className="bg-primary text-black text-center" ref={lineupRef}>
@@ -44,12 +44,12 @@ export default function LineUp() {
             />
           </div>
           <div className="flex flex-wrap space-x-4 items-center justify-center text-[1.5rem] lg:text-[3rem]">
-            {liveArtists.map((artist, index) => {
+            {artists.acts.map((artist, index) => {
               return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
             })}
           </div>
           <div className="flex flex-wrap space-x-4 mt-2 lg:mt-4 items-center justify-center font-sans text-[1rem] lg:text-[1.5rem]">
-            {artists2.map((artist, index) => {
+            {artists.localacts.map((artist, index) => {
               return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
             })}
           </div>
@@ -58,17 +58,17 @@ export default function LineUp() {
             <Artist index={1} name="Jamie Jones" setModal={setModal} key="jj" />
           </div>
           <div className="flex flex-wrap space-x-4 items-center justify-center font-medium text-[1.5rem] lg:text-[3rem]">
-            {artists.map((artist, index) => {
+            {artists.djs.map((artist, index) => {
               return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
             })}
           </div>
           <div className="flex flex-wrap space-x-4 mt-2 lg:mt-4 items-center justify-center font-sans text-[1rem] lg:text-[1.5rem]">
-            {artists4.map((artist, index) => {
+            {artists.localdjs.map((artist, index) => {
               return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
             })}
           </div>
         </div>
-        <Modal modal={modal} artists={artists} />
+        <Modal modal={modal} artists={[...artists.djs, ...artists.localdjs, ...artists.acts, ...artists.localacts]} />
       </section>
     </>
   );

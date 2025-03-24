@@ -1,8 +1,5 @@
-export const artists = [
-    // {
-    //   name: 'Seth Troxler',
-    //   src: 'artist.jpg',
-    // },
+export const artists = {
+  djs: [
     {
       name: '753',
       src: 'artist.jpg',
@@ -115,26 +112,8 @@ export const artists = [
       name: 'TODD TERRY',
       src: 'artist.jpg',
     }
-  ]
-  export const artists2 = [
-    {
-      name: 'A.M.Q.N.',
-      src: 'artist.jpg',
-    },
-    {
-      name: 'Geistform',
-      src: 'artist.jpg',
-    },
-    {
-      name: 'Humo',
-      src: 'artist.jpg',
-    },
-    {
-      name: 'White Solar Dog',
-      src: 'artist.jpg',
-    },
-  ]
-  export const artists4 = [
+  ],
+  localdjs: [
     {
       name: 'ED WARNER',
       src: 'artist.jpg',
@@ -172,7 +151,7 @@ export const artists = [
       src: 'artist.jpg',
     },
     {
-      name: ' MOD.1',
+      name: 'MOD.1',
       src: 'artist.jpg',
     },
     {
@@ -183,8 +162,8 @@ export const artists = [
       name: 'SPACER',
       src: 'artist.jpg',
     }, 
-  ]
-  export const liveArtists = [
+  ],
+  acts: [
     {
       name: 'Curses (hibrid)',
       src: 'artist.jpg',
@@ -205,4 +184,23 @@ export const artists = [
       name: 'Who made Who (Hybrid dj set)',
       src: 'artist.jpg',
     },
-  ]
+  ],
+  localacts: [
+    {
+      name: 'A.M.Q.N.',
+      src: 'artist.jpg',
+    },
+    {
+      name: 'Geistform',
+      src: 'artist.jpg',
+    },
+    {
+      name: 'Humo',
+      src: 'artist.jpg',
+    },
+    {
+      name: 'White Solar Dog',
+      src: 'artist.jpg',
+    },
+  ],
+}
