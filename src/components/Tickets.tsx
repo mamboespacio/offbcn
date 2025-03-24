@@ -5,6 +5,7 @@ import { tickets } from "@/data/tickets";
 import Marquee from "./Marquee";
 
 export const Tickets = () => {
+  console.log(tickets);
   if (!tickets) return <p>loading</p>;
   return (
     <section className="bg-grey">

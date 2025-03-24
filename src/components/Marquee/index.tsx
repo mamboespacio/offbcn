@@ -68,11 +68,16 @@ function Phrase({ src }: { src: string }){
   )
 }
 
-function Pic({ pics }: { pics: any }) {
+interface PicProps {
+  pics: { image: string; name: string }[];
+}
+
+function Pic({ pics }: PicProps) {
+  if (!Array.isArray(pics)) return null;
   return (
     <div className="flex items-center">
-      {pics.map((pic: { image: string, name: string; }, index: Key | null | undefined) => {
-        return(
+      {pics.map((pic: { image: string; name: string }, index: Key | null | undefined) => {
+        return (
           <div key={index} className={styles.item}>
             <Image
               src={`/${pic.image}`}
@@ -81,8 +86,8 @@ function Pic({ pics }: { pics: any }) {
               alt={pic.name}
             />
           </div>
-        )
+        );
       })}
     </div>
-  )
+  );
 }
