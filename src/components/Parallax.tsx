@@ -70,7 +70,12 @@ export default function Home() {
   )
 }
 
-const Column = ({ images, y }) => {
+interface ColumnProps {
+  images: string[];
+  y: any; // Replace 'any' with the appropriate type if known
+}
+
+const Column = ({ images, y }: ColumnProps) => {
   return (
     <motion.div
       className={styles.column}
