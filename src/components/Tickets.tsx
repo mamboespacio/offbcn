@@ -1,3 +1,5 @@
+"use client"
+
 import TicketCard from "@/components/TicketCard";
 import { tickets } from "@/data/tickets";
 import Marquee from "./Marquee";
