@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Key, useEffect, useRef } from 'react';
 import styles from './style.module.css';
 
-
 interface MarqueeProps {
   direction: string;
   left: any;
