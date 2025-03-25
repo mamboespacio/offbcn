@@ -63,7 +63,7 @@ function Phrase({ src }: { src: string }){
   return (
     <div className={'px-3 flex gap-5 items-center uppercase'}>
       <p className='text-[1.5rem] lg:text-[2.5vw]'>{src}</p>
-      <p className='text-[1.5rem] lg:text-[2.5vw]'>{'--->'}</p>
+      <p className='text-[1.5rem] lg:text-[2.5vw]'>→</p>
     </div>
   )
 }

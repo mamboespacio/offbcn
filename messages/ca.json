@@ -1,0 +1,30 @@
+{
+  "Main": {
+    "title": "OFF BCN Festival",
+    "description": "OFFBCN és un festival nascut el 2014 que celebra la cultura del ball i de la música electrònica en un esdeveniment amb una producció tecnològica espectacular, divertit i transformador que eleva el concepte de festa a nous estàndards i uneix la comunitat clubber global."
+  },
+  "Menu": {
+    "Home": "Inicio",
+    "Program": "Programa",
+    "About": "Sobre",
+    "tickets": "Entrades"
+  },
+  "Header": {
+    "title": "11TH Edition → 13 & 14 June → Parc del Fòrum → Open Air - Day & Night",
+    "edition": "Edición N11",
+    "date": "13 i 14 de Juny"
+  },
+  "About": {
+    "about": "OFFBCN és un festival nascut el 2014 que celebra la cultura del ball i de la música electrònica en un esdeveniment amb una producció tecnològica espectacular, divertit i transformador que eleva el concepte de festa a nous estàndards i uneix la comunitat clubber global."
+  },
+  "lineUp": {
+    "title": "Line Up — Coneix els artistes"
+  },
+  "Tickets": {
+    "title": "Uneix-te al moviment global clubber el cap de setmana de la música electrònica a Barcelona.",
+    "friday": "Divendres",
+    "saturday": "Dissabte",
+    "wekend": "Weekend",
+    "cta": "Entrades"
+  }
+}

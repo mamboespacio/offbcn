@@ -1,9 +1,10 @@
 "use client"
 
 import { useState } from "react";
-import Link from "next/link";
 import { useScroll, motion, useMotionValueEvent, AnimatePresence } from 'framer-motion';
-import { Bars2Icon } from '@heroicons/react/24/solid'
+import { Bars2Icon } from '@heroicons/react/24/solid';
+import { useTranslations } from "next-intl"
+import { Link, usePathname } from "@/i18n/routing"
 
 
 const navLinks = [
@@ -12,7 +13,10 @@ const navLinks = [
   { title: "About", href: "/" },
 ];
 
+
 export const Navbar = () => {
+  const t = useTranslations('Menu');
+  const pathname = usePathname();
   const [hidden, setHidden] = useState(true);
   const { scrollY } = useScroll();
   const [open, setOpen] = useState(false);
@@ -57,14 +61,14 @@ export const Navbar = () => {
 
   useMotionValueEvent(scrollY, "change", latest => {
     const previous = scrollY.getPrevious() || 0;
-    if (latest > previous && previous > 500) { setHidden(false) }
+    if (latest > 800) { setHidden(false) }
     else { setHidden(true) }
   });
 
   return (
     <>
     <nav className="w-full fixed font-sans z-20">
-      <div className="px-8 py-4">
+      <div className="p-4">
         <div className="relative z-10 flex flex-wrap justify-between items-center">
           <div className="overflow-hidden h-[22px]">
             <motion.div
@@ -76,12 +80,16 @@ export const Navbar = () => {
               animate={hidden ? "hidden" : "visible"}
               transition={{ duration: 0.35, ease: "easeIn" }}
             >
-              <p className="antialiased font-semibold leading-none pr-4 text-primary text-[10px] lg:text-[20px]">
-                {"-> Beyond Dance Culture"}
-              </p>
-              <p className="hidden md:flex antialiased font-semibold leading-none pr-4 text-primary text-2xl">
-                OffBCNFestival
-              </p>
+              <div className="flex items-center h-[22px]">
+                <p className="antialiased font-semibold leading-none pr-4 text-primary text-[16px] lg:text-[20px]">
+                  {"-> Beyond Dance Culture"}
+                </p>
+              </div>
+              <div className="flex items-center h-[22px]">
+                <p className="hidden md:flex antialiased font-semibold leading-none pr-4 text-primary text-2xl -tracking-[1px]">
+                  OffBCN Festival
+                </p>
+              </div>
             </motion.div>
           </div>
           {/* <motion.a
@@ -97,9 +105,13 @@ export const Navbar = () => {
             OffBCNFestival
           </motion.a> */}
           <div className="flex items-center lg:order-2">
-            <a href="/calculator" className="uppercase mr-4 inline-flex items-center justify-center px-5 py-2 lg:text-lg text-normal text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black">
-              Get Tickets
-            </a>
+            <Link
+              href="https://ra.co/promoters/113395"
+              target="_blank"
+              className="uppercase mr-4 inline-flex items-center justify-center px-5 py-2 lg:text-lg text-normal text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black"
+              >
+              {t('tickets')}
+            </Link>
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
@@ -137,7 +149,7 @@ export const Navbar = () => {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="flex flex-col h-full justify-center font-lora items-center gap-4 "
+                className="flex flex-col h-full justify-center items-center gap-4 "
               >
                 {navLinks.map((link, index) => {
                   return (
@@ -150,18 +162,17 @@ export const Navbar = () => {
                     </div>
                   );
                 })}
+                <div className="flex gap-4">
+                  <Link href={pathname} locale="en">English</Link>
+                  <Link href={pathname} locale="es">Español</Link>
+                  <Link href={pathname} locale="ca">Catalá</Link>
+                </div>
               </motion.div>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
     </nav>
-    <nav className="w-full absolute bottom-[22vh] font-sans z-10">
-      <div className="flex justify-between p-8">
-      <p>11th Edition</p>
-      <p>13/14 de Julio Parc del Forum</p>
-      </div>
-    </nav> 
   </>
   )
 };

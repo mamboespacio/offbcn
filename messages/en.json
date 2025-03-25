@@ -1,0 +1,30 @@
+{
+  "Main": {
+    "title": "OFF BCN Festival",
+    "description": "OFFBCN is a music festival born in 2014 that celebrates dance culture in a fun and transformative journey that fosters inclusion, builds community, and elevates the concept of partying to extraordinary new heights in an impressive show production. Beyond"
+  },
+  "Menu": {
+    "Home": "Home",
+    "Program": "Program",
+    "About": "About",
+    "tickets": "Get Tickets"
+  },
+  "Header": {
+    "title": "11TH Edition → 13 & 14 June → Parc del Fòrum → Open Air - Day & Night",
+    "edition": "11TH Edition",
+    "date": "13 & 14 June"
+  },
+  "About": {
+    "about": "OFFBCN is a music festival born in 2014 that celebrates dance culture in a fun and transformative journey that fosters inclusion, builds community, and elevates the concept of partying to extraordinary new heights in an impressive show production. Beyond"
+  },
+  "lineUp": {
+    "title": "Line Up — Meet the artists"
+  },
+  "Tickets": {
+    "title": "Join the global clubbing movement in Barcelona’s electronic music weekend",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "wekend": "Weekend",
+    "cta": "Get Tickets"
+  }
+}

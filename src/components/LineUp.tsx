@@ -7,26 +7,24 @@ import Modal from "@/components/Modal";
 import Marquee from "@/components/Marquee";
 import Image from "next/image";
 import prodigy from '../../public/prodigy.svg';
+import { useTranslations } from "next-intl";
 
 export default function LineUp() {
+  const t = useTranslations('lineUp');
   const [modal, setModal] = useState({ active: false, index: 0 })
   const lineupRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: lineupRef });
-
-  // useMotionValueEvent(scrollYProgress, "change", value => {
-  //   console.log(value);
-  // });
   const y = useTransform(scrollYProgress, [0, 0.5, 1], ["0px", "200px", "0px"])
   if (!artists) return <p>loading</p>;
   return (
     <>
       <section className="bg-primary text-black text-center" ref={lineupRef}>
-        <div className="bg-grey text-primary font-sans overflow-hidden">
+        <div className="bg-grey text-primary overflow-hidden">
           <Marquee
             direction="left"
             left="-75%"
             type="phrase"
-            src="Line Up - Meet the Artists"
+            src={t('title')}
           />
         </div>
         <div className="relative z-10 flex flex-col items-center py-[10vh] lg:py-[20vh] max-w-[90vw] mx-auto uppercase">
