@@ -104,11 +104,11 @@ export const Navbar = () => {
           >
             OffBCNFestival
           </motion.a> */}
-          <div className="flex items-center lg:order-2">
+          <div className="flex items-center gap-2 lg:order-2">
             <Link
               href="https://ra.co/promoters/113395"
               target="_blank"
-              className="uppercase mr-4 inline-flex items-center justify-center px-5 py-2 lg:text-lg text-normal text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black"
+              className="uppercase inline-flex items-center justify-center px-5 py-2 lg:text-lg text-normal text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black"
               >
               {t('tickets')}
             </Link>

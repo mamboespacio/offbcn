@@ -25,27 +25,20 @@ export const Hero = () => {
   // useMotionValueEvent(scrollYProgress, "change", value => {
   //   console.log(value);
   // });
-  const videoY = useTransform(scrollYProgress, [0, 0.2, 0.4], ["0vh", "16vh", "64vh"])
-  const videoA = useTransform(scrollYProgress, [0, 0.10], ["0.5", "0"])
+  const opacity = useTransform(scrollYProgress, [0, 0.10], ["0.5", "0"])
   const titleY = useTransform(scrollYProgress, [0, 0.15, 0.4], ["0vh", "-66vh", "-164vh"])
   return (
     <header className="h-screen bg-black overflow-hidden">
       <motion.div
         className="aspect-w-9 aspect-h-16 lg:aspect-w-16 lg:aspect-h-9 lg:h-screen"
-        style={{
-          y: videoY ,
-          opacity: videoA,
-        }}>
+        style={{ opacity }}>
           {isMobile ? (
             <ResponsivePlayer url="/home-mobile.mp4"/>
           ) : (
             <ResponsivePlayer url="/home.mp4"/>
           )}
       </motion.div>
-      <motion.div
-        className="fixed bottom-[48px] lg:bottom-[64px] block w-full h-[12vh] lg:h-[25vh] z-50"
-        style={{ y: titleY }}
-      >
+      <div className="absolute bottom-[48px] lg:bottom-[64px] block w-full h-[12vh] lg:h-[25vh] z-50">
         <div className="p-4">
         <Image
           sizes="100vw"
@@ -58,18 +51,15 @@ export const Hero = () => {
           alt="OffBCNFestival"
         />
         </div>
-      </motion.div>
-      <motion.div
-          className="fixed bottom-0 h-[40px] lg:h-[56px] bg-grey text-primary overflow-hidden"
-          style={{ y: titleY }}
-        >
+      </div>
+      <div className="absolute bottom-0 h-[40px] lg:h-[56px] bg-grey text-primary overflow-hidden">
           <Marquee
             direction="left"
             left="-47%"
             type="phrase"
             src={t('title')}
           />
-        </motion.div>
+        </div>
     </header>
   )
 }
