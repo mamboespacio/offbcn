@@ -65,7 +65,7 @@ export const Hero = () => {
         >
           <Marquee
             direction="left"
-            left="-75%"
+            left="-47%"
             type="phrase"
             src={t('title')}
           />
