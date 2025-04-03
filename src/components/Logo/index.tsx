@@ -16,7 +16,7 @@ export default function Logo(){
     else if (latest > 5200){ setLogoVariant("phraseB") }
   });
   return (
-    <div className="overflow-hidden h-[22px]">
+    <div className="overflow-hidden h-[12px] lg:h-[22px]">
       <motion.div
         className="flex flex-col"
         variants={{
@@ -28,13 +28,13 @@ export default function Logo(){
         animate={logoVariant || undefined}
         transition={{ duration: 0.35, ease: "easeIn" }}
       >
-        <div className="flex items-center h-[22px]">
-          <p className="antialiased font-semibold leading-none pr-4 text-[16px] lg:text-[20px]">
+        <div className="flex items-center h-[12px] lg:h-[22px]">
+          <p className="antialiased font-semibold leading-none pr-4 text-[12px] lg:text-[22px]">
             {"-> Beyond Dance Culture"}
           </p>
         </div>
-        <div className="flex items-center h-[22px]">
-          <p className="hidden md:flex antialiased font-semibold leading-none pr-4 text-2xl -tracking-[1px]">
+        <div className="flex items-center h-[12px] lg:h-[22px]">
+          <p className="hidden md:flex antialiased font-semibold leading-none pr-4 text-[12px] lg:text-[22px] -tracking-[1px]">
             OffBCN Festival
           </p>
         </div>

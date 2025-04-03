@@ -62,18 +62,18 @@ export const Navbar = () => {
       <div className="p-4">
         <div className="relative z-10 flex justify-between items-center">
           <Logo/>
-          <div className="flex items-center gap-2 lg:order-2">
+          <div className="flex items-center gap-2 lg:order-2 ">
             <Link
               href="https://ra.co/promoters/113395"
               target="_blank"
-              className="uppercase inline-flex items-center justify-center px-5 py-2 lg:text-lg text-normal text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black"
+              className="uppercase inline-flex items-center justify-center px-5 py-2 text-[12px] lg:text-[22px] text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black"
               >
               {t('tickets')}
             </Link>
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              className="justify-center px-5 py-3 text-xs text-center rounded-full bg-primary text-black hover:bg-black hover:text-primary"
+              className="justify-center px-2 py-1 lg:px-5 lg:py-3 text-xs text-center rounded-full bg-primary text-black hover:bg-black hover:text-primary"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
               onClick={toggleMenu}

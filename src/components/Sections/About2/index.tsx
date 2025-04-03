@@ -97,8 +97,8 @@ export default function About2() {
                   </div>
                   <div className="col-span-4 font-light text-black text-lg lg:text-xl gap-8">
                     <div className="max-w-75">
-                      <p className="whitespace-pre-line">
-                        <p className="mb-4 text-sm lg:mb-0 lg:text-2xl">{t(`faq.section-${index}-description`)}</p>
+                      <p className="whitespace-pre-line mb-4 text-sm lg:mb-0 lg:text-2xl">
+                        {t(`faq.section-${index}-description`)}
                       </p>
                     </div>
                   </div>

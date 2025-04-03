@@ -21,10 +21,10 @@ export const Footer = () => {
           <div className="mt-[8vh] px-4">         
             <div className="flex pt-4 md:pt-0 justify-between">
               <div className="font-sans flex antialiased text-primary-100 gap-4">
-                <a href="#" className="hover:underline">Instagram</a>
-                <a href="#" className="hover:underline">Facebook</a>
-                <a href="#" className="hover:underline">TikTok</a>
-                <a href="#" className="hover:underline">YouTube</a>
+                <a href="https://www.instagram.com/off.festival.ofc/" className="hover:underline">Instagram</a>
+                <a href="https://www.facebook.com/off.festival.ofc" className="hover:underline">Facebook</a>
+                <a href="https://www.tiktok.com/@off.festival.ofc" className="hover:underline">TikTok</a>
+                <a href="https://www.youtube.com/@off.festival.oficial" className="hover:underline">YouTube</a>
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@ export const Footer = () => {
             </div>
             <div className="flex justify-between mt-4 text-xs md:text-lg">
               <p className="antialiased text-black">
-                Copyright © 2025 OffBCNFestival. All rights reserved.
+                © 2025 OffBCNFestival. All rights reserved.
               </p>
               <p className="antialiased text-black">
                 Website by antena.world

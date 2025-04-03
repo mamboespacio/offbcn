@@ -4,7 +4,7 @@ import { motion, useScroll, useMotionValueEvent, useTransform } from "motion/rea
 import Image from "next/image";
 import logo from "../../../public/logo-yellow.svg"
 import { ResponsivePlayer } from "../ResponsivePlayer";
-import { useIsMobile } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/useIsMobile";
 import { useTranslations } from "next-intl";
 import Marquee from "../Marquee";
 import { useRef } from "react";
