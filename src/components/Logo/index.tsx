@@ -29,7 +29,7 @@ export default function Logo(){
         transition={{ duration: 0.35, ease: "easeIn" }}
       >
         <div className="flex items-center h-[12px] lg:h-[22px]">
-          <p className="antialiased font-semibold leading-none pr-4 text-[12px] lg:text-[22px]">
+          <p className="antialiased font-semibold leading-none text-[12px] lg:text-[22px]">
             {"-> Beyond Dance Culture"}
           </p>
         </div>

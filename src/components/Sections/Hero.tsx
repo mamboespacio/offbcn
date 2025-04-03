@@ -27,7 +27,7 @@ export const Hero = () => {
   // });
   const scale = useTransform(scrollYProgress, [0, 0.10], ["1", "2"])
   return (
-    <header className="w-screen h-screen overflow-hidden">
+    <header className="w-screen h-dvh overflow-hidden">
       <div className="fixed -z-1 aspect-w-9 aspect-h-16 lg:aspect-w-16 lg:aspect-h-9 lg:h-screen">
         <motion.div style={{ scale }}>
           {isMobile ? (
