@@ -9,34 +9,22 @@ import { useTranslations } from "next-intl";
 import Marquee from "../Marquee";
 import { useRef } from "react";
 
-// import { put } from "@vercel/blob";
-
-
 export const Hero = () => {
-  // const { url } = await put('articles/blob.txt', 'Hello World!', { access: 'public' });
   const t = useTranslations('Header');
-  const isMobile = useIsMobile();
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
     offset: ["start 0", "end 1.5"]
   });
-
-  // useMotionValueEvent(scrollYProgress, "change", value => {
-  //   console.log(value);
-  // });
-  const scale = useTransform(scrollYProgress, [0, 0.10], ["1", "2"])
+  const scale = useTransform(scrollYProgress, [0, 0.10], ["1.2", "2"])
   return (
-    <header className="w-screen h-dvh overflow-hidden">
-      <div className="fixed -z-1 aspect-w-9 aspect-h-16 lg:aspect-w-16 lg:aspect-h-9 lg:h-screen">
-        <motion.div style={{ scale }}>
-          {isMobile ? (
-            <ResponsivePlayer url="/home-mobile.mp4"/>
-          ) : (
-            <ResponsivePlayer url="/home.mp4"/>
-          )}
-        </motion.div>
-      </div>
+    <header className="w-screen h-screen overflow-hidden">
+      <motion.div
+        className="w-screen h-screen opacity-[0.7]"
+        style={{scale}}
+      >
+        <ResponsivePlayer video="home"/>
+      </motion.div>
       <div className="absolute bottom-0 z-1 flex flex-col w-screen items-end">
         <div className="block w-full z-50">
           <div className="p-4">

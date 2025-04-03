@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 
-export function useIsMobile(MOBILE_BREAKPOINT = 1024) {
+export function useIsMobile(MOBILE_BREAKPOINT = 580) {
   const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
   useEffect(() => {
     const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);

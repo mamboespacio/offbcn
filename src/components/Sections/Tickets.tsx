@@ -11,7 +11,7 @@ import pyramid from '../../../public/pyramid_poster.jpg';
 export const Tickets = () => {
   const t = useTranslations('Tickets');
   return (
-    <section className="bg-black">
+    <section id="tickets" className="bg-black relative z-10">
       <div className="py-[20vh]">
         <h1 className="text-xl max-w-[75vw] mx-auto text-white text-center font-sans">
           {t('title')}

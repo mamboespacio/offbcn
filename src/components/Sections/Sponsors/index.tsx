@@ -4,7 +4,7 @@ import {sponsors} from "@/data/sponsors";
 export default function Sponsors() {
   if (!sponsors) return <p>loading</p>;
   return (
-    <section className="bg-lightGrey overflow-hidden py-8">
+    <section id="sponsors" className="bg-lightGrey overflow-hidden py-8 relative z-10">
       <Marquee
         direction="left"
         left="-75%"

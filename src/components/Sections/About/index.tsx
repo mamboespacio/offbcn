@@ -26,7 +26,7 @@ export default function About() {
   })
   
   return (
-    <section>
+    <section id="about" className="relative z-10">
       <motion.div
         className="bg-primary h-[100vh] flex flex-col items-center  justify-center z-10"
       // style={{ y: x }}
@@ -35,7 +35,9 @@ export default function About() {
           {t('offbcn-1')}
         </p>
       </motion.div>
-      <ImageGallery/>
+      <div className="bg-black">
+        <ImageGallery/>
+      </div>
       <motion.div
         className="bg-primary w-screen h-screen flex flex-col items-center justify-center md:text-2xl lg:text-4xl gap-4"
       // style={{ y: x4 }}
