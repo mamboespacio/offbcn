@@ -18,7 +18,7 @@ export const Hero = () => {
   });
   const scale = useTransform(scrollYProgress, [0, 0.10], ["1.2", "2"])
   return (
-    <header className="w-screen h-dvh lg:h-screen overflow-hidden">
+    <header className="w-screen h-full overflow-hidden">
       <motion.div
         className="w-screen h-screen opacity-[0.7]"
         style={{scale}}
