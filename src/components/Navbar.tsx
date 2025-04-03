@@ -5,20 +5,17 @@ import { useScroll, motion, useMotionValueEvent, AnimatePresence } from 'framer-
 import { Bars2Icon } from '@heroicons/react/24/solid';
 import { useTranslations } from "next-intl"
 import { Link, usePathname } from "@/i18n/routing"
-
+import Logo from "@/components/Logo";
 
 const navLinks = [
   { title: "Home", href: "/" },
-  { title: "Program", href: "/" },
+  { title: "Artists", href: "/artists" },
   { title: "About", href: "/" },
 ];
-
 
 export const Navbar = () => {
   const t = useTranslations('Menu');
   const pathname = usePathname();
-  const [hidden, setHidden] = useState(true);
-  const { scrollY } = useScroll();
   const [open, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -59,51 +56,12 @@ export const Navbar = () => {
     },
   };
 
-  useMotionValueEvent(scrollY, "change", latest => {
-    const previous = scrollY.getPrevious() || 0;
-    if (latest > 800) { setHidden(false) }
-    else { setHidden(true) }
-  });
-
   return (
     <>
     <nav className="w-full fixed font-sans z-20">
       <div className="p-4">
-        <div className="relative z-10 flex flex-wrap justify-between items-center">
-          <div className="overflow-hidden h-[22px]">
-            <motion.div
-              className="flex flex-col"
-              variants={{
-                hidden: { y: 0 },
-                visible: { y: "-22px" }
-              }}
-              animate={hidden ? "hidden" : "visible"}
-              transition={{ duration: 0.35, ease: "easeIn" }}
-            >
-              <div className="flex items-center h-[22px]">
-                <p className="antialiased font-semibold leading-none pr-4 text-primary text-[16px] lg:text-[20px]">
-                  {"-> Beyond Dance Culture"}
-                </p>
-              </div>
-              <div className="flex items-center h-[22px]">
-                <p className="hidden md:flex antialiased font-semibold leading-none pr-4 text-primary text-2xl -tracking-[1px]">
-                  OffBCN Festival
-                </p>
-              </div>
-            </motion.div>
-          </div>
-          {/* <motion.a
-            href="/"
-            className="font-sans text-[3vw] flex items-center"
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1 }
-            }}
-            animate={hidden ? "hidden" : "visible"}
-            transition={{ duration: 0.35, ease: "easeIn" }}
-          >
-            OffBCNFestival
-          </motion.a> */}
+        <div className="relative z-10 flex justify-between items-center">
+          <Logo/>
           <div className="flex items-center gap-2 lg:order-2">
             <Link
               href="https://ra.co/promoters/113395"
@@ -141,7 +99,6 @@ export const Navbar = () => {
                   className="cursor-pointer text-md text-black"
                   onClick={toggleMenu}
                 >
-                  
                 </p>
               </div>
               <motion.div
@@ -153,9 +110,8 @@ export const Navbar = () => {
               >
                 {navLinks.map((link, index) => {
                   return (
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden" key={index}>
                       <MobileNavLink
-                        key={index}
                         title={link.title}
                         href={link.href}
                       />

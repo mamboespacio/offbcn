@@ -31,7 +31,7 @@ export default function Marquee({ direction, left, type, src }: MarqueeProps){
   }, [])
 
   return (
-    <div className="overflow-hidden" ref={container}>
+    <div className="w-screen overflow-hidden" ref={container}>
       <Slide direction={direction} left={left} progress={scrollYProgress} type={type} src={src} />
     </div>
   )
@@ -61,9 +61,9 @@ function Slide({ direction, progress, left, src, type }: SlideProps) {
 
 function Phrase({ src }: { src: string }){
   return (
-    <div className={'px-3 flex gap-5 items-center uppercase'}>
-      <p className='text-[1.5rem] lg:text-[2.5vw]'>{src}</p>
-      <p className='text-[1.5rem] lg:text-[2.5vw]'>→</p>
+    <div className={'px-3 flex gap-5 items-center'}>
+      <p className='text-[1.5rem] lg:text-[2vw]'>{src}</p>
+      <p className='text-[1.5rem] lg:text-[2vw]'>→</p>
     </div>
   )
 }

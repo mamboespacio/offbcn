@@ -11,6 +11,7 @@ export function ResponsivePlayer({ url }: ResponsivePlayerProps) {
       className="react-player"
       url={url}
       playing
+      playsinline
       loop
       muted
     />

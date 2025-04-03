@@ -1,9 +1,9 @@
-import { Tickets } from "@/components/Tickets";
+import { Tickets } from "@/components/Sections/Tickets";
 import { Footer } from "@/components/Footer";
-import { Hero } from "@/components/Hero";
+import { Hero } from "@/components/Sections/Hero";
 import { Loader } from "@/components/Loader";
-import LineUp from "@/components/LineUp";
-import { About } from "@/components/About";
+import { LineUp } from "@/components/Sections/LineUp";
+import About from "@/components/Sections/About";
 import Sponsors from "@/components/Sections/Sponsors";
 
 export default function Home() {
@@ -13,7 +13,6 @@ export default function Home() {
       <Loader/>
       <Hero/>
       <About/>
-      <LineUp/>
       <Tickets/>
       <Sponsors/>
       <Footer/>

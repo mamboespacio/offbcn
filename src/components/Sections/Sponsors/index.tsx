@@ -6,7 +6,7 @@ export default function Sponsors() {
   return (
     <section className="bg-lightGrey overflow-hidden py-8">
       <Marquee
-        direction="right"
+        direction="left"
         left="-75%"
         type="image"
         src={sponsors}
