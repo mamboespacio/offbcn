@@ -15,7 +15,8 @@
     "date": "13 i 14 de Juny"
   },
   "About": {
-    "about": "OFFBCN és un festival nascut el 2014 que celebra la cultura del ball i de la música electrònica en un esdeveniment amb una producció tecnològica espectacular, divertit i transformador que eleva el concepte de festa a nous estàndards i uneix la comunitat clubber global."
+    "offbcn-1": "OFFBCN és un festival nascut el 2014 que celebra la cultura del ball i de la música electrònica en un esdeveniment amb una producció tecnològica espectacular, divertit i transformador que eleva el concepte de festa a nous estàndards i uneix la comunitat clubber global.",
+    "offbcn-2": "OFFBCN és més que un festival. Creiem en la festa i el ball com una expressió inherent de la connexió humana, on la música, la celebració i la tecnologia convergeixen per crear una experiència cultural emocionant i inspiradora. \n\nÉs un moviment internacional que uneix els amants de la música electrònica de tot el món. OFFBCN posiciona la ciutat com un hub global per a la cultura de la música de ball i un suport per a l’expressió artística, la connexió de l’escena i la innovació a la ciutat. Amb un ferm compromís amb la sostenibilitat i el retorn social, treballem per un futur més responsable i inclusiu."
   },
   "lineUp": {
     "title": "Line Up — Coneix els artistes"
@@ -26,5 +27,30 @@
     "saturday": "Dissabte",
     "wekend": "Weekend",
     "cta": "Entrades"
+  },
+  "AboutPage": {
+    "title": "The Festival",
+    "offbcn-1": "OFFBCN FESTIVAL is not just an event; it’s an immersive experience where the dance floor becomes a space for collective exploration. More than a festival, it is a meeting point for those who see electronic music as a form of expression—a culture that transcends genres and generations.",
+    "offbcn-2": "Here, raving is not just a celebration but a statement of intent. OFFBCN honors the history of electronic music, from the early house and techno rhythms to today’s most cutting-edge sounds. Every set, every visual, every gathering is part of a narrative that defies time, proving that the raver spirit is unshakable yet always evolving. More than a festival, OFFBCN is a borderless community—a laboratory of innovation where club culture merges with art and technology. It’s a call to those who feel the bass as their own heartbeat. In Barcelona, under the sky of Parc del Fòrum, a new chapter of this story is written each year: the rave continues, because dancing is eternal.",
+    "e4d-1": "Elements 4 Dance is the promoter responsible for OFFBCN Festival. Formed by Marc Sala and Aitor Ballester, two electronic music enthusiasts who founded this production company more than 20 years ago, they have been active in the scene ever since. Their trajectory includes the organization of more than 150 events in emblematic clubs and venues, as well as the production of more than 40 large-format festivals. They stand out for their focus on events such as DGTL Barcelona and the ones held in iconic spaces such as Vila Habana, the unforgettable Exclusive Boat Parties (2007-2013) and the legendary Life & Death parties.",
+    "e4d-2": "Their latest projects include the development of 78|33 Sound Lab, the only immersive sound room in Spain, and Pressing Cat, the first vinyl pressing plant in Catalonia. Additionally, an innovative and unique project: 24LAB, a musical hub in the Sant Andreu district of Barcelona that offers musicians and artists a wide selection of services for music creation, distribution, and the organization of concerts and audiovisual shows.",
+    "forum": "Fòrum is a versatile 200,000 m² venue in Barcelona located in the Sant Martí neighbourhood, renowned for hosting major events. It is a landmark of contemporary urban architecture, featuring modernist and industrial design elements with bold geometric forms all surrounded by nature and in front of the Mediterranean Sea.",
+    "faq":{
+      "title":"Frequently Asked Questions",
+      "section-1-title": "01 — Schedule",
+      "section-1-description": "The festival opens its doors 30 minutes before the event begins.\n– Doors Open Friday at 1:30pm | Program from 2:00pm – 01:00am. Last Entry is 00:00am\n– Doors Open Saturday at 2:30pm | Program from 3:00pm – 03:00am. Last Entry is 02:00am",
+      "section-2-title": "02 — Payments",
+      "section-2-description": "At OFFBCN, you can pay with your own credit card or with the festival card; cash is not accepted at any festival-owned point of sale. If you have cash, you can go to any of our Cashless points, obtain a festival card, and load it with the amount of money you desire. It’s important to note that there will be no refund for any unused funds on the festival card you have recharged.",
+      "section-3-title": "03 — Eating & drinking",
+      "section-3-description": "Yes, the festival has a spacious area set up for eating during the festival days.",
+      "section-4-title": "04 — Tickets",
+      "section-4-description": "For information regarding your tickets, please consult here: Resident Advisor",
+      "section-5-title": "05 — Cameras and video recording",
+      "section-5-description": "Yes, as long as it’s not a professional camera or recorder. Selfie sticks are not allowed.",
+      "section-6-title": "06 — Lost items",
+      "section-6-description": "Due to the Personal Data Protection Law, all lost items will be handed over directly to the corresponding authorities. To retrieve lost items, please go to the Guàrdia Urbana Police Station of the Sant Martí District (Address: Central Park Poblenou)",
+      "section-7-title": "07 — Access",
+      "section-7-description": "Address: Parc del Fòrum C/ de la Pau, 12 08930 Sant Adrià de Besòs, Barcelona\n\nBy car from Tarragona: Ronda Litoral, exit 24: Rambla Prim \\ Diagonal Mar \\ Port Fòrum St. Adrià.\n\nBy car from Girona: Ronda Litoral, exit 24: Rambla de Prim. Continue to the right towards Sant Ramon de Penyafort / Sant Adrià / Cristóbal de Moura.\n\nNearest car parkings:\n1 – B:SM Plaça Fòrum (Plaça d’Ernest Lluch)\n2 – B:SM Garcia Fària (c/Garcia Fària, 1)\n3 – B:SM Glòries (Plaça de les Glòries)\n\nBike:\nNearest bike parkings: Al Carrer Sant Ramón de Penyafort in front of UPC and Pl. Leonardo Da Vinci.\n\nTaxi:\nNearest taxi rank:\n– In front of the Convention Center (CCIB)\n– In front of Hilton Hotel\n\nMetro:\nLine L4:\n– Station: El Maresme-Fòrum.\n– Exit: Rambla de Prim.\nTimes:\n– Fridays and public holidays, from 5 am to 2 am.\n– Saturday, all night.\n\nBus:\n– Day Bus:\nLines: 7, 136, H16, B20, B23, V29, V33, V31\nTimes: from 6:30 am to 11 pm\n– Night Bus:\nLines: N6, N7\nTimes: from 11 pm to 6 am\n\nTramway:\n– Number: T4\n– Station: Fòrum\n– Times: Fridays, Saturdays and public holidays, from 5 am to 2 am"
+    }
   }
 }
