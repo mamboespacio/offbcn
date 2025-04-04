@@ -5,7 +5,7 @@ import { artists } from "@/data/artists";
 import Artist from "@/components/Artist";
 import Modal from "@/components/Modal";
 import Marquee from "@/components/Marquee";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import prodigy from '../../../public/logos/prodigy.png';
 import jamie from '../../../public/logos/jamie-jones.png';
 import seth from '../../../public/seth-troxler.svg';
@@ -64,7 +64,7 @@ export function LineUp() {
   );
 }
 
-export function MainArtist({ src, name }: { src: string; name: string }) {
+export function MainArtist({ src, name }: { src: StaticImageData; name: string }) {
   return (
     <div className="w-[40vw] py-2 hover:opacity-80">
       <Image
