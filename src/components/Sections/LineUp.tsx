@@ -6,8 +6,8 @@ import Artist from "@/components/Artist";
 import Modal from "@/components/Modal";
 import Marquee from "@/components/Marquee";
 import Image from "next/image";
-import prodigy from '../../../public/prodigy.svg';
-import jamie from '../../../public/jamie-jones.svg';
+import prodigy from '../../../public/prodigy.png';
+import jamie from '../../../public/jamie-jones.png';
 import seth from '../../../public/seth-troxler.svg';
 import { useTranslations } from "next-intl";
 
