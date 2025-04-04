@@ -20,8 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .react-player {
   pointer-events: none;
   position: absolute;

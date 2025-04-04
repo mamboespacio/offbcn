@@ -1,16 +1,17 @@
 "use client"
 
 import { useState } from "react";
-import { useScroll, motion, useMotionValueEvent, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Bars2Icon } from '@heroicons/react/24/solid';
 import { useTranslations } from "next-intl"
 import { Link, usePathname } from "@/i18n/routing"
+import { useRouter } from '@/i18n/navigation';
 import Logo from "@/components/Logo";
 
 const navLinks = [
   { title: "Home", href: "/" },
   { title: "Artists", href: "/artists" },
-  { title: "About", href: "/" },
+  { title: "About", href: "/about" },
 ];
 
 export const Navbar = () => {
@@ -66,7 +67,7 @@ export const Navbar = () => {
             <Link
               href="https://ra.co/promoters/113395"
               target="_blank"
-              className="uppercase inline-flex items-center justify-center px-5 py-2 text-[12px] lg:text-[22px] text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black"
+              className="uppercase inline-flex items-center justify-center px-5 py-2 text-xs lg:text-xl text-center text-primary bg-black rounded-full hover:bg-primary hover:text-black"
               >
               {t('tickets')}
             </Link>
@@ -114,6 +115,7 @@ export const Navbar = () => {
                       <MobileNavLink
                         title={link.title}
                         href={link.href}
+                        toggleMenu={toggleMenu}
                       />
                     </div>
                   );
@@ -154,14 +156,20 @@ const mobileLinkVars = {
 interface MobileNavLinkProps {
   title: string;
   href: string;
+  toggleMenu: () => void;
 }
-const MobileNavLink: React.FC<MobileNavLinkProps> = ({ title, href }) => {
+const MobileNavLink: React.FC<MobileNavLinkProps> = ({ title, href, toggleMenu }) => {
+  const router = useRouter();
+  const handleClick = (href: string) => {
+    toggleMenu();
+    router.push(href);
+  };
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-5xl uppercase text-black"
+      className="text-2xl lg:text-4xl uppercase text-black cursor-pointer"
     >
-      <Link href={href}>{title}</Link>
+      <div onClick={() => handleClick(href)}>{title}</div>
     </motion.div>
   );
 };

@@ -34,12 +34,12 @@ export function LineUp() {
           <MainArtist src={prodigy} name="Prodigy"/>
           <div className="flex flex-wrap space-x-4 items-center justify-center text-[1.5rem] lg:text-[3rem]">
             {artists.acts.map((artist, index) => {
-              return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
+              return <Artist index={index} name={artist.name} key={index} />
             })}
           </div>
           <div className="flex flex-wrap space-x-4 mt-2 lg:mt-4 items-center justify-center font-sans text-[1rem] lg:text-[1.5rem]">
             {artists.localacts.map((artist, index) => {
-              return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
+              return <Artist index={index} name={artist.name} key={index} />
             })}
           </div>
           <p className="py-4 text-xl">Dj Sets</p>
@@ -49,12 +49,12 @@ export function LineUp() {
           </div>
           <div className="flex flex-wrap space-x-4 items-center justify-center font-medium text-[1.5rem] lg:text-[3rem]">
             {artists.djs.map((artist, index) => {
-              return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
+              return <Artist index={index} name={artist.name} key={index} />
             })}
           </div>
           <div className="flex flex-wrap space-x-4 mt-2 lg:mt-4 items-center justify-center font-sans text-[1rem] lg:text-[1.5rem]">
             {artists.localdjs.map((artist, index) => {
-              return <Artist index={index} name={artist.name} setModal={setModal} key={index} />
+              return <Artist index={index} name={artist.name} key={index} />
             })}
           </div>
         </div>

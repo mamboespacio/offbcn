@@ -4,7 +4,6 @@ import { motion, useScroll, useMotionValueEvent, useTransform } from "motion/rea
 import Image from "next/image";
 import logo from "../../../public/logo-yellow.svg"
 import { ResponsivePlayer } from "../ResponsivePlayer";
-import { useIsMobile } from "@/hooks/useIsMobile";
 import { useTranslations } from "next-intl";
 import Marquee from "../Marquee";
 import { useRef } from "react";
@@ -17,6 +16,7 @@ export const Hero = () => {
     offset: ["start 0", "end 1.5"]
   });
   const scale = useTransform(scrollYProgress, [0, 0.10], ["1.2", "2"])
+  const opacity = useTransform(scrollYProgress, [0, 1], ["1", "0"])
   return (
     <header className="w-screen h-full overflow-hidden">
       <motion.div
@@ -27,7 +27,10 @@ export const Hero = () => {
       </motion.div>
       <div className="absolute bottom-0 z-1 flex flex-col w-screen items-end">
         <div className="block w-full z-50">
-          <div className="p-4">
+          <motion.div
+            className="p-4"
+            style={{ opacity }}
+          >
             <Image
               sizes="100vw"
               style={{
@@ -38,7 +41,7 @@ export const Hero = () => {
               quality={100}
               alt="OffBCNFestival"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="bg-grey text-primary">
           <Marquee

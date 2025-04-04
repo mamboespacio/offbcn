@@ -12,8 +12,8 @@ export const Tickets = () => {
   const t = useTranslations('Tickets');
   return (
     <section id="tickets" className="bg-black relative z-10">
-      <div className="py-[20vh]">
-        <h1 className="text-xl max-w-[75vw] mx-auto text-white text-center font-sans">
+      <div className="py-[15%]">
+        <h1 className="text-xl lg:text-4xl max-w-[75vw] mx-auto text-white text-center font-sans">
           {t('title')}
         </h1>
         <div className="space-y-4 lg:space-y-24 max-w-[80vw] mx-auto mt-8">

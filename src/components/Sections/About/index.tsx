@@ -28,7 +28,7 @@ export default function About() {
   return (
     <section id="about" className="relative z-10">
       <motion.div
-        className="bg-primary h-[100vh] flex flex-col items-center  justify-center z-10"
+        className="bg-primary flex flex-col items-center justify-center py-[15%]"
       // style={{ y: x }}
       >
         <p className="text-xl lg:text-4xl max-w-[75vw] text-black text-center">
@@ -39,7 +39,7 @@ export default function About() {
         <ImageGallery/>
       </div>
       <motion.div
-        className="bg-primary w-screen h-screen flex flex-col items-center justify-center md:text-2xl lg:text-4xl gap-4"
+        className="bg-primary flex flex-col items-center justify-center py-[15%]"
       // style={{ y: x4 }}
       >
         <p className="text-center text-black text-xl lg:text-3xl max-w-[75vw] mx-auto whitespace-pre-line">

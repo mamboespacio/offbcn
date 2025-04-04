@@ -61,9 +61,9 @@ function Slide({ direction, progress, left, src, type }: SlideProps) {
 
 function Phrase({ src }: { src: string }){
   return (
-    <div className={'px-3 flex gap-5 items-center'}>
-      <p className='text-[1.5rem] lg:text-[2vw]'>{src}</p>
-      <p className='text-[1.5rem] lg:text-[2vw]'>→</p>
+    <div className={'py-2 flex gap-5 items-center'}>
+      <p className='text-xl lg:text-3xl'>{src}</p>
+      <p className='text-xl lg:text-3xl'>→</p>
     </div>
   )
 }
