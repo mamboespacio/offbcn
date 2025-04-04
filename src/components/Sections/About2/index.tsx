@@ -3,6 +3,7 @@
 import { useRef, useEffect } from "react";
 import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
 import { useTranslations } from "next-intl";
+import RichText from '@/components/RichText';
 import Lenis from 'lenis';
 import Marquee from "@/components/Marquee";
 import ImageGallery from "@/components/ImageGallery";
@@ -48,8 +49,8 @@ export default function About2() {
         </p>
       </motion.div>
       <div className="py-[25vh] max-w-[75vw] mx-auto">
-        <div className="bg-black flex flex-col px-4 py-8">
-          <h1 className="font-sans text-2xl lg:mb-0 lg:text-6xl">
+        <div className="flex flex-col px-4 py-8">
+          <h1 className="text-white font-sans text-2xl lg:mb-0 lg:text-6xl">
             Elements 4 Dance
           </h1>
           <div className="my-4 md:grid md:grid-cols-2 gap-8">
@@ -65,8 +66,8 @@ export default function About2() {
             </div>
           </div>
         </div>
-        <div className="bg-black flex flex-col px-4 py-8">
-          <h1 className="font-sans text-2xl lg:mb-0 lg:text-6xl">
+        <div className="flex flex-col px-4 py-8">
+          <h1 className="text-white font-sans text-2xl lg:mb-0 lg:text-6xl">
             Parc del Fòrum
           </h1>
           <div className="my-4 md:grid md:grid-cols-2 gap-8">
@@ -78,7 +79,7 @@ export default function About2() {
           </div>
         </div>
       </div>
-      <div className="bg-grey text-white">
+      <div className="bg-grey">
         <div className="bg-grey text-primary">
           <Marquee
             direction="left"
@@ -86,26 +87,6 @@ export default function About2() {
             type="phrase"
             src={t('faq.title')}
           />
-        </div>
-        <div className="py-[25vh]">
-          {sections.map((index) => {
-            return(
-              <div className="max-w-[75vw] mx-auto flex flex-col items-start justify-center mb-8" key={index}>
-                <div className="my-4 md:grid md:grid-cols-6">
-                  <div className="col-span-2">
-                    <p className="mb-4 text-sm lg:mb-0 lg:text-2xl">{t(`faq.section-${index}-title`)}</p>
-                  </div>
-                  <div className="col-span-4 font-light text-black text-lg lg:text-xl gap-8">
-                    <div className="max-w-75">
-                      <p className="whitespace-pre-line mb-4 text-sm lg:mb-0 lg:text-2xl">
-                        {t(`faq.section-${index}-description`)}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
         </div>
       </div>
     </section>

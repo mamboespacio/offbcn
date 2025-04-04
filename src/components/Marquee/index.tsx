@@ -13,6 +13,7 @@ interface MarqueeProps {
 }
 
 export default function Marquee({ direction, left, type, src }: MarqueeProps){
+  console.log(src);
   if (!src || !src.length) return null;
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -62,7 +63,7 @@ function Slide({ direction, progress, left, src, type }: SlideProps) {
 function Phrase({ src }: { src: string }){
   return (
     <div className={'py-2 flex gap-5 items-center'}>
-      <p className='text-xl lg:text-3xl'>{src}</p>
+      <p className='text-xl lg:text-3xl pl-4'>{src}</p>
       <p className='text-xl lg:text-3xl'>→</p>
     </div>
   )
@@ -84,6 +85,7 @@ function Pic({ pics }: PicProps) {
               width={300}
               height={0}
               alt={pic.name}
+              placeholder='blur'
             />
           </div>
         );

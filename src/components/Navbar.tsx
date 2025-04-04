@@ -121,9 +121,9 @@ export const Navbar = () => {
                   );
                 })}
                 <div className="flex gap-4">
-                  <Link href={pathname} locale="en">English</Link>
+                  <Link href={pathname} locale="ca">Català</Link>
                   <Link href={pathname} locale="es">Español</Link>
-                  <Link href={pathname} locale="ca">Catalá</Link>
+                  <Link href={pathname} locale="en">English</Link>
                 </div>
               </motion.div>
             </div>

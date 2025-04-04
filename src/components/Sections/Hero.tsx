@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useMotionValueEvent, useTransform } from "motion/react"
 import Image from "next/image";
-import logo from "../../../public/logo-yellow.svg"
+import logo from "../../../public/logos/logo-yellow.png"
 import { ResponsivePlayer } from "../ResponsivePlayer";
 import { useTranslations } from "next-intl";
 import Marquee from "../Marquee";
@@ -26,7 +26,7 @@ export const Hero = () => {
         <ResponsivePlayer video="home"/>
       </motion.div>
       <div className="absolute bottom-0 z-1 flex flex-col w-screen items-end">
-        <div className="block w-full z-50">
+        <div className="block w-full z-30">
           <motion.div
             className="p-4"
             style={{ opacity }}
@@ -40,6 +40,7 @@ export const Hero = () => {
               src={logo}
               quality={100}
               alt="OffBCNFestival"
+              placeholder="blur"
             />
           </motion.div>
         </div>

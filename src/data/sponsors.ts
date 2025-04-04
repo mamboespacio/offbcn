@@ -1,37 +1,37 @@
 export const sponsors = [
   {
     name: 'E4D',
-    image: 'Elements4dance-1.png',
+    image: '/logos/elements4dance.jpg',
     url: "https://ra.com",
   },
   {
     name: 'Parc del Forum',
-    image: 'El-Parc.png',
+    image: '/logos/el-parc.jpg',
     url: "https://ra.com",
   },
   {
     name: 'Blackworks',
-    image: 'Blackworks.png',
+    image: '/logos/blackworks.jpg',
     url: 'https://ra.com',
   },
   {
     name: 'Defected',
-    image: 'Defected-1.png',
+    image: '/logos/defected.jpg',
     url: 'https://ra.com',
   },
   {
     name: 'Pyramid',
-    image: 'Pyramid-1024x251.png',
+    image: '/logos/pyramid.jpg',
     url: 'https://ra.com',
   },
   {
-    name: 'Pyramid',
-    image: 'RA.png',
+    name: 'RA',
+    image: '/logos/ra.jpg',
     url: 'https://ra.com',
   },
   {
     name: '24Live',
-    image: '24live.png',
+    image: '/logos/24live.jpg',
     url: 'https://ra.com',
   },
 ]

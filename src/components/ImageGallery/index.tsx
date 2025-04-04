@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef, useEffect } from "react";
-import { useScroll, useTransform, motion, MotionValue } from 'framer-motion';
+import { useScroll, useTransform, motion } from 'framer-motion';
 import { useTranslations } from "next-intl";
 import styles from './style.module.scss';
 import Lenis from 'lenis';

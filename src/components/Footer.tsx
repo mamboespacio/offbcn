@@ -1,9 +1,9 @@
 "use client"
 
 import Image from "next/image"
-import { motion, useScroll, useMotionValueEvent, useTransform } from "motion/react"
+import { useScroll, useTransform } from "motion/react"
 import { useRef } from "react";
-import logo from '../../public/logo-black.svg';
+import logo from '../../public/logos/logo-black.png';
 
 export const Footer = () => {
   const container = useRef(null);
@@ -36,6 +36,7 @@ export const Footer = () => {
               src={logo}
               quality={100}
               alt="OffBCNFestival"
+              placeholder="blur"
             />
           </div>
           <div className="flex justify-between mt-4 text-xs lg:text-lg">
