@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Navbar } from "@/components/Navbar";
 import { GrotekMxRwnd } from '@/fonts/Fonts';
+import { GoogleTagManager } from '@next/third-parties/google'
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -32,13 +33,14 @@ export default async function RootLayout({
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
-  console.log(GrotekMxRwnd);
+  // console.log(GrotekMxRwnd);
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
-  console.log(messages);
+  // console.log(messages);
   return (
     <html lang={locale} className={`${GrotekMxRwnd.variable} h-full bg-black`}>
+      <GoogleTagManager gtmId="GTM-5FDG6TGM" />
       <body className="h-full bg-black">
         <NextIntlClientProvider messages={messages}>
           <Navbar></Navbar>
