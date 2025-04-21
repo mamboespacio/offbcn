@@ -17,37 +17,37 @@ export default function Sponsors() {
     {
       name: 'E4D',
       image: e4d,
-      url: "https://ra.com",
+      url: "#",
     },
     {
       name: 'Parc del Forum',
       image: forum,
-      url: "https://ra.com",
+      url: "https://parcdelforum.barcelona/es",
     },
     {
       name: 'Blackworks',
       image: blackworks,
-      url: 'https://ra.com',
+      url: 'https://blackworks.es',
     },
     {
       name: 'Defected',
       image: defected,
-      url: 'https://ra.com',
+      url: 'https://defected.com/',
     },
     {
       name: 'Pyramid',
       image: pyramid,
-      url: 'https://ra.com',
+      url: 'https://www.amnesia.es/es/promotor/pyramid',
     },
     {
       name: 'RA',
       image: ra,
-      url: 'https://ra.com',
+      url: 'https://ra.co',
     },
     {
       name: '24Live',
       image: live,
-      url: 'https://ra.com',
+      url: '#',
     },
   ]
   const container = useRef(null);
