@@ -2,36 +2,36 @@ export const sponsors = [
   {
     name: 'E4D',
     image: '/logos/elements4dance.jpg',
-    url: "https://ra.com",
+    url: "#",
   },
   {
     name: 'Parc del Forum',
     image: '/logos/el-parc.jpg',
-    url: "https://ra.com",
+    url: "https://parcdelforum.barcelona/es",
   },
   {
     name: 'Blackworks',
     image: '/logos/blackworks.jpg',
-    url: 'https://ra.com',
+    url: 'https://blackworks.es',
   },
   {
     name: 'Defected',
     image: '/logos/defected.jpg',
-    url: 'https://ra.com',
+    url: 'https://defected.com/',
   },
   {
     name: 'Pyramid',
     image: '/logos/pyramid.jpg',
-    url: 'https://ra.com',
+    url: 'https://www.amnesia.es/es/promotor/pyramid',
   },
   {
     name: 'RA',
     image: '/logos/ra.jpg',
-    url: 'https://ra.com',
+    url: 'https://ra.co/',
   },
   {
     name: '24Live',
     image: '/logos/24live.jpg',
-    url: 'https://ra.com',
+    url: '#',
   },
 ]
