@@ -109,17 +109,19 @@ export const Navbar = () => {
                 exit="initial"
                 className="flex flex-col h-full justify-center items-center gap-4 "
               >
-                {navLinks.map((link, index) => {
-                  return (
-                    <div className="overflow-hidden" key={index}>
-                      <MobileNavLink
-                        title={link.title}
-                        href={link.href}
-                        toggleMenu={toggleMenu}
-                      />
-                    </div>
-                  );
-                })}
+                <div className="flex flex-col md:flex-row md:gap-8 justify-center items-center">
+                  {navLinks.map((link, index) => {
+                    return (
+                      <div className="overflow-hidden" key={index}>
+                        <MobileNavLink
+                          title={link.title}
+                          href={link.href}
+                          toggleMenu={toggleMenu}
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
                 <div className="flex gap-4">
                   <Link href={pathname} locale="ca">Català</Link>
                   <Link href={pathname} locale="es">Español</Link>
