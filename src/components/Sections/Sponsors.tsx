@@ -8,6 +8,7 @@ import defected from "../../../public/logos/defected.png"
 import pyramid from "../../../public/logos/pyramid.png"
 import ra from "../../../public/logos/ra.png"
 import live from "../../../public/logos/24live.png"
+import merrel from "../../../public/logos/merrel.png"
 import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -48,6 +49,11 @@ export default function Sponsors() {
       name: '24Live',
       image: live,
       url: '#',
+    },
+    {
+      name: 'Merrel',
+      image: merrel,
+      url: 'https://www.merrell.com/ES/es_ES/home',
     },
   ]
   const container = useRef(null);
