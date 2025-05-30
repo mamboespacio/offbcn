@@ -32,23 +32,41 @@ export default function About2() {
   return (
     <section>
       <motion.div
-        className="bg-primary h-screen flex flex-col items-center  justify-center z-10"
+        className="bg-black flex flex-col items-center justify-center z-10 py-16"
       // style={{ y: x }}
       >
-        <p className="text-xl lg:text-4xl max-w-[75vw] text-black text-center">
-          {t('offbcn-1')}
+        <p className="text-xl lg:text-2xl max-w-[75vw] text-primary text-center">
+          {/* {t('offbcn-1')} */}
+          <RichText>
+            {(tags) => t.rich('cancellation', tags)}
+          </RichText><br/>
+          <RichText>
+            {(tags) => t.rich('cancellation2', tags)}
+          </RichText><br/>
+          <RichText>
+            {(tags) => t.rich('cancellation3', tags)}
+          </RichText><br/>
+          <RichText>
+            {(tags) => t.rich('cancellation4', tags)}
+          </RichText><br/>
+          <RichText>
+            {(tags) => t.rich('cancellation5', tags)}
+          </RichText><br/>
+          <RichText>
+            {(tags) => t.rich('cancellation6', tags)}
+          </RichText>
         </p>
       </motion.div>
-      <ImageGallery/>
-      <motion.div
+      {/* <ImageGallery/> */}
+      {/* <motion.div
         className="bg-primary w-screen h-screen flex flex-col items-center justify-center z-10 px-4 lg:px-0 md:text-2xl lg:text-4xl gap-4"
       // style={{ y: x4 }}
       >
         <p className="text-center text-black text-xl lg:text-3xl lg:max-w-[75vw] mx-auto">
           {t('offbcn-2')}
         </p>
-      </motion.div>
-      <div className="py-[25vh] max-w-[75vw] mx-auto">
+      </motion.div> */}
+      {/* <div className="py-[25vh] max-w-[75vw] mx-auto">
         <div className="flex flex-col px-4 py-8">
           <h1 className="text-white font-sans text-2xl lg:mb-0 lg:text-6xl">
             Elements 4 Dance
@@ -78,8 +96,8 @@ export default function About2() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-grey">
+      </div> */}
+      {/* <div className="bg-grey">
         <div className="bg-grey text-primary">
           <Marquee
             direction="left"
@@ -88,7 +106,7 @@ export default function About2() {
             src={t('faq.title')}
           />
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
